@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile /var/www/webdip.barka.foi.hr/2016_projekti/WebDiP2016x012/Projekt/privatno/.htpasswd
+Require valid-user

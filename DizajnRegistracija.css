@@ -1,0 +1,152 @@
+body {
+    float:left;
+    clear:both;
+    background-color: #4ABDAC;
+    margin: 0;
+    width: 100%
+}
+
+/*header*/
+header{
+    float: left;
+    clear:both;
+    width: 100%
+}
+
+header a{
+    float: right;
+    color: whitesmoke;
+    font-size: x-large;
+    margin-right: 1%;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/*Navigacija*/
+nav{
+    float:left;
+    clear:both;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F7B733;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #FC4A1A;
+}
+
+/* Pocetna stranica */
+#pocetna_stranica{
+    width: 50%;
+    margin-left: 11%;
+    float: left;
+    clear: both;
+}
+
+
+.dobrodosli{
+    color:white;
+    font-family: 'Signika', sans-serif;
+}
+
+/*Slike*/
+
+#slike{
+    float: left;
+}
+
+img{
+    border-radius: 300px;
+    margin-right: 224px;
+}
+
+/*footer*/
+
+footer{
+    float:left;
+    clear:both;
+}
+
+#sekcija_registracija{
+    float: left;
+    padding-right: 25%;
+}
+
+#formaregistracija{
+    float: left;
+
+}
+
+#kosarica{
+    width: auto;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #F7B733;
+    color: white;
+}
+
+#kuponi{
+    width: 75%;
+    float: left;
+}
+
+article{
+    float:left;
+    margin-bottom: 0;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+section > section{
+    float: left;
+    clear: both;
+}
+section{
+    float: left;
+}
+
+table{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+

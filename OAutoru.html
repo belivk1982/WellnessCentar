@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>O meni</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Signika" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="DizajnRegistracija.css" />
+    </head>
+    <body>
+        <nav id = "navigacija">
+            <ul>
+                <?php if(empty($tipKorisnik)){?>
+                <li>
+                    <a href="Registracija.php">Registracija</a>
+                </li>
+                <li>
+                    <a href="prijava.php">Prijava</a>
+                </li>
+                <?php }?>
+                <?php if (!empty($tipKorisnik)) { ?>
+                    <li>
+                        <a href="GalerijaSlika2.php">Kuponi</a>
+                    </li>
+                    <li>
+                        <a href="KorisnikBodovi.php">Informacija o bodovima</a>
+                    </li>
+                <?php } ?>
+                <li>
+                    <a href="PocetnaStranica.php">Početna</a>
+                </li>
+                <li>
+                    <a href="PopisKategorija.php">Popis kategorija</a>
+                </li>
+                <?php if ($tipKorisnik < 2 && !empty($tipKorisnik)) { ?>
+
+                    <li>
+                        <a href="UnosKupona.php">Unos kupona</a>
+                    </li>
+                    <li>
+                        <a href="PregledKorisnika.php">Pregled korisnika</a>
+                    </li>
+                    <li>
+                        <a href="PregledDnevnika.php">Pregled dnevnika</a>
+                    </li>
+                <?php } ?>
+                <?php if ($tipKorisnik < 3 && !empty($tipKorisnik)) { ?>
+                    <li>
+                        <a href="PregledKupona.php">Pregled kupona</a>
+                    </li>
+                    <li>
+                        <a href="DefiniranjeUsluga.php">Definiranje usluga</a>
+                    </li>
+
+                <?php } ?>
+            </ul>
+        </nav>
+        <header>
+            <h1>O meni</h1>
+        </header>
+        <section id="omeni">
+            <img src="Ja.jpg" alt="Josip Bijelic" height="200" width="300"/>
+            <p>Josip Bijelić</p>
+            <p>43391/14-R</p>
+            <a href="mailto: josbijeli@foi.hr">josbijeli@foi.hr</a>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

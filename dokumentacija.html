@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1>Dokumentacija</h1>
+        </header>
+        <section id = "Sadrzaj">
+            <dl>
+                <dt><a href="#Uvod">1. Uvod</a></dt>
+                <dd><a href ="#SvrhaDokumenta">1.1. Svrha dokumenta</a></dd>
+                <dd><a href ="#Publika">1.2. Publika</a></dd>
+                <dd><a href = "#Opseg">1.3. Opseg</a></dd>
+                <dt><a href ="#PregledDokumenta">2. Generalni pregled dokumenta</a></dt>
+                <dd><a href = "#KoristeneTehnologije">2.1. Korištene tehnologije</a></dd>
+                <dd><a href = "#funkcionalnostiAplikacije">2.2. Funkcionalnosti web aplikacije</a></dd>
+                <dd><a href="#EvidencijaPogresaka">2.3. Rukovanje Pogreškama</a></dd>
+                <dt><a href ="#TehnickiZahtjevi">3. Tehnički zahtjevi</a></dt>
+                <dd><a href ="#KorisnickiZahtjevi">3.1. Korisnički zahtjevi</a></dd>
+                <dd><a href ="#ZahtjeviServera">3.2. Zahtjevi servera</a></dd>
+                <dt><a href = "#Struktura">4. Struktura projekta</a></dt>
+                <dd><a href = "#MapaMjesta">4.1. Mapa mjesta</a></dd>
+                <dd><a href = "#OpisDokumenata">4.2. Opis php dokumenata</a></dd>
+                <dt><a href = "#ArhitekturaProjekta">5. Arhitektura projekta</a></dt>
+                <dd><a href = "#ERA">5.1. ERA dijagram</a></dd>
+                <dd><a href = "#navigacijski">Navigacijski dijagram</a></dd>
+                <dt>6. Popis Literature</dt>
+            </dl>
+        </section>
+        <section id = "Uvod">
+            <h3>1. Uvod</h3>
+            <section id="SvrhaDokumenta">1.1. Svrha Dokumenta</section>
+            <h4>Svrha dokumenta</h4>
+            <p>
+                Svrha ovog dokumenta je učenje rada web stranica i web aplikacija
+                na kolegiju Web Dizajn i Programiranje. Kroz projekt se uči rad s
+                HTML-om, CSS-om, Javascriptom, PHP-om i drugim brojnim tehnologijama
+                koje uključuje izrada web aplikacije.
+            </p>
+            <section id="Publika">
+                <h4>1.2. Publika</h4>
+                <p>
+                    Ciljana publika su profesori i asistenti koji vode kolegij Web
+                    Dizajni i Programiranje kako bi procjenili znanje studenta na
+                    kolegiju. Uz profesore na fakultetu projekt mogu vidjeti i studenti
+                    te na taj način proširiti svoja znanja.
+                </p>
+            </section>
+            <section id="Opseg">
+                <h4>1.3. Opseg</h4>
+                <p>
+                    Projekt pokriva domenu jednostavnog upravljanja web stranicom za wellness
+                    centar. Upravljanje korisnicima, upravljanje nagradnim kuponima i popustima,
+                    evidencija zaposlenika i korisnika wellness centra.
+                </p>
+            </section>   
+        </section>
+        <section id="PregledDokumenta">
+            <h3>Generalni pregled dokumenta</h3>
+            <section id = "KoristeneTehnologije">
+                <h4>Korištene tehnologije</h4>
+                <table border = 2px>
+                    <tr>
+                        <th>
+                            Vrsta tehnologije
+                        </th>
+                        <th>
+                            Tehnologija
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Web preglednici
+                        </td>
+                        <td>
+                            Google Chrome, Mozilla Firefox
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Razvojna okruženja
+                        </td>
+                        <td>
+                            NetBeans IDE 8.2.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Programski i prezentacijski jezici
+                        </td>
+                        <td>
+                            HTML, CSS, JavaScript, PHP
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Ostale aplikacije
+                        </td>
+                        <td>
+                            FileZilla, putty
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="funkcionalnostiAplikacije">
+                <h4>2.2. Funkcionalnosti web aplikacije</h4>
+                <ul>
+                    <li>
+                        Pregled usluga wellnessa
+                    </li>
+                    <li>
+                        Saklupljanje bodova za kupone
+                    </li>
+                    <li>
+                        Kupnja kupona
+                    </li>
+                    <li>
+                        Ažuriranje korisnika
+                    </li>
+                    <li>
+                        Ažuriranje usluga
+                    </li>
+                    <li>
+                        Ažuriranje kupona
+                    </li>
+                    <li>
+                        Evidencija podataka o korisniku
+                    </li>
+                </ul>
+            </section>
+            <section id="EvidencijaPogresaka">
+                <h4>Rukovanje pogreškama</h4>
+                <p>
+                    Testiranjem aplikacije nisam pronašao nijednu tehničku
+                    nepravilnost u radu. Iako se preko navigacijske trake ne mogu
+                    otvoriti dokumenti za koje određeni tip korisnika nema ovlasti,
+                    on ih može upisati kao url i pronaći.
+                </p>
+            </section>
+        </section>
+        <section id="TehnickiZahtjevi">
+            <h3>Tehnički zahtjevi</h3>
+            <section id="KorisnickiZahtjevi">
+                <h4>Korisnički zahtjevi</h4>
+                <p>Aplikacija je testirana i radi na preglednicima Google Chrome i Mozilla Firefox 
+                    te sigurno radi na Windows operacijskom sustavu</p>
+            </section>
+            <section id="ZahtjeviServera">
+                <h4>Zahtjevi servera</h4>
+                <ul>
+                    <li>
+                        MySQL
+                    </li>
+                    <li>
+                        PHPMyAdmin
+                    </li>
+                    <li>
+                        Apache 2.4.
+                    </li>
+                    <li>
+                        PHP 5.6.
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section id="Struktura">
+            <h3>4. Strukuta projekta</h3>
+            <section id="MapaMjesta">
+                <img src="">
+                <p>Na slici vidimo strukutru foldera u kojem se projekt nalazi. Ne vidi se folder privatno
+                    koji nam omogućuje htaccess ispis korisnika.
+                </p>
+            </section>
+            <section id = "OpisDokumenata">
+                <h4>Opis php dokumenata</h4>
+                <table border = 2>
+                    <tr>
+                        <th>Naziv dokumenta</th>
+                        <th>Opis dokumenta</th>
+                    </tr>
+                    <tr>
+                        <td>prijava.php</td>
+                        <td>U ovom dokumentu se nalazi forma za prijavu u jednom i dva koraka.</td>
+                    </tr>
+                    <tr>
+                        <td>Registracija.php</td>
+                        <td>Dokument za registraciju korisnika</td>
+                    </tr>
+                    <tr>
+                        <td>AktivacijaKorisnickogRacuna.php</td>
+                        <td>Dokument na koji se korisnik poslije registracije preusmjerava nakon klika na link koji dobije na email prilikom registracije</td>
+                    </tr>
+                    <tr>
+                        <td>BrojSkupljenihBodova.php</td>
+                        <td>Skripta za dohvaćanje dovršenih akcija i ukupnog broja bodova korisnika.</td>
+                    </tr>
+                    <tr>
+                        <td>DefiniranjeUsluga.php</td>
+                        <td>Dokument za definiranje usluga(unos naziva, cijene...) te pridruživanje usluge kateogoriji</td>
+                    </tr>
+                    <tr>
+                        <td>DohvacanjeBodova.php</td>
+                        <td>Skripta za dohvaćanje potrošenih i skupljenih bodova te dohvaćanje korisnikovog ID-a</td>
+                    </tr>
+                    <tr>
+                        <td>DrugiKorakAktivacije.php</td>
+                        <td>Dokument u kojem se nalazi forma za unos generiranog koda dobivenog na email kod prijave korisnika.</td>
+                    </tr>
+                    <tr>
+                        <td>GalerijaSlika2.php</td>
+                        <td>Dokument u kojem se nalaze aktivni kuponi za koje prijavljeni korisnik ima dovoljno bodova. U njemu se nalazi košarica
+                            kojom korisnik može kupiti kupone i dobiti generirani kod za kupljene kupone koji se može isprintati.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>KorisnikBodovi.php</td>
+                        <td>Stranica na kojoj korisnik može viditi svoje bodove</td>
+                    </tr>
+                    <tr>
+                        <td>O meni.html</td>
+                        <td>Osnovni podaci o autoru</td>
+                    </tr>
+                    <tr>
+                        <td>PocetnaStranica.php</td>
+                        <td>Stranica na koju se ulazi prilikom ulaska na web stranicu.</td>
+                    </tr>
+                    <tr>
+                        <td>PopisKategorija.php</td>
+                        <td>Kategorije koje može viditi neregistrirani korisnik.</td>
+                    </tr>
+                    <tr>
+                        <td>PregledDnevnika.php</td>
+                        <td>Dokument u kojem se nalaze svi podaci zapisani u dnevnik.</td>
+                    </tr>
+                    <tr>
+                        <td>PregledKorisnika.php</td>
+                        <td>Dokument u kojem se nalaze svi korisnici koje administrator može ili otključati ili zaključati</td>
+                    </tr>
+                    <tr>
+                        <td>PregledKupona.php</td>
+                        <td>Dokument u kojem se kupon aktivira te ga definira moderator.</td>
+                    </tr>
+                    <tr>
+                        <td>ProvjeraPodatakaRegistracija.php</td>
+                        <td>Dokument u kojem se nalaze funkcije koje provjeravaju ispravnost podataka kod registracije.</td>
+                    </tr>
+                    <tr>
+                        <td>ProvjeriKorisnika.php</td>
+                        <td>Provjerava nalazi li se korisnik s unesenim korisničkim imenom u bazi podataka.</td>
+                    </tr>
+                    <tr>
+                        <td>UnosKupona.php</td>
+                        <td>Forma u kojoj administrator kreira kupone.</td>
+                    </tr>
+                    <tr>
+                        <td>UnosUDnevnik.php</td>
+                        <td>Skripta za unos u dnevnik rada sustava.</td>
+                    </tr>
+                    <tr>
+                        <td>baza.class.php</td>
+                        <td>Klasa za rad s bazom.</td>
+                    </tr>
+                    <tr>
+                        <td>odjava.php</td>
+                        <td>Skripta za odjavu iz sustava.</td>
+                    </tr>
+                    <tr>
+                        <td>sesija.class.php</td>
+                        <td>Klasa za rad sa sesijom.</td>
+                    </tr>
+                    <tr>
+                        <td>zaboravljenaLozinka.php</td>
+                        <td>Skripta za slanje nove lozinke korisniku na email ukoliko je staru zaboravio.</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+        <section id = "ArhitekturaProjekta">
+            <h3>Arhitektura projekta</h3>
+            <section id ="ERA">
+                <h4>ERA model</h4>
+                <figure>
+                    <img src="ERAmodel.png" alt="ERA model"/>
+                    <figcaption>ERA model</figcaption>
+                </figure>
+                <p>
+                    ERA model koji sam koristio pri izradi projekta. Sve prikazane tablice nisu korištene, ali su napravljenje i koristit će se
+                    u daljnim verzijama ove web aplikacije.
+                </p>
+            </section>
+            <section id = "navigacijski">
+                <h4>Navigacijski dijagram</h4>
+                <figure>
+                    <img src="navigacijski.png" alt="navigacijski dijagram"/>
+                    <figcaption>Navigacijski dijagram</figcaption>
+                </figure>
+            </section>
+        </section>
+        <section>
+            <h3>Popis literature</h3>
+            <p>Google+: <a href = "https://apis.google.com/js/platform.js">https://apis.google.com/js/platform.js</a></p>
+            <p>Google + datotke za share sadržaja</p>
+            <p>Sesija.class.php</p>
+            <p>Klasu sesija je korištena kod kreiranja sesija u projektu</p>
+            <p>Baza.class.php</p>
+            <p>klasa za korištenje baze podataka u projektu</p>
+            <p>ReCaptcha</p>
+            <p>Korištenje validacije unosa u projektu</p>
+            
+    </section>
+
+</body>
+</html>
